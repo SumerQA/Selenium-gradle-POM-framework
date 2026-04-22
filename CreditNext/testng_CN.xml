@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Onguard CreditNext" verbose="1" thread-count="1" preserve-order="true">
+
+    <!-- Parameters -->
+    <parameter name="Browser" value="CHROME" />
+    <parameter name="Locale" value="EN" />
+    <parameter name="AppManURL" value="https://localhost/ApplicationManager" />
+    <parameter name="login" value="user" />
+    <parameter name="password" value="password" />
+    <parameter name="language" value="English" />
+    <parameter name="group" value="TG" />
+    <parameter name="Currency" value="USD" />
+    <parameter name="Administration" value="admin1" />
+    <parameter name="CreditNextURL" value="https://localhost/Automation/auth/login" />
+    <parameter name="DataSource" value="TestDB" />
+    <parameter name="DatabaseName" value="automation" />
+
+    <!-- Package definitions -->
+    <packages>
+        <package name="CreditNext.CN_Login_Functionality" />
+        <package name="CreditNext.customerGroupsListScreens" />
+        <package name="CreditNext.InvoicesListScreens" />
+        <package name="CreditNext.actionsListScreens" />
+        <package name="CreditNext.disputesListScreens" />
+        <package name="CreditNext.requestsListScreens" />
+    </packages>
+
+    <!-- Listeners -->
+    <listeners>
+        <listener class-name="org.testng.reporters.TestHTMLReporter" />
+        <listener class-name="org.testng.reporters.XMLReporter" />
+        <listener class-name="com.yourcompany.Configration_Files.ScreenShotOnFailure" />
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+    </listeners>
+
+    <!-- Test definitions -->
+    <test name="CreditNext login Functionality">
+        <classes>
+            <class name="CreditNext.CN_Login_Functionality.Login" />
+        </classes>
+    </test>
+
+    <test name="CreditNext- Customers Groups List Screen UI test">
+        <classes>
+            <class name="CreditNext.customerGroupsListScreens.customerGroupsListScreen" />
+            <class name="CreditNext.customerGroupsListScreens.customerGroupsWithOutStandingBalance" />
+            <class name="CreditNext.customerGroupsListScreens.customerGroupsWithBalanceOverdue" />
+            <class name="CreditNext.customerGroupsListScreens.customerGroupsWithCreditLimitExceed" />
+        </classes>
+    </test>
+
+    <test name="CreditNext- Customer List Screen UI test">
+        <classes>
+            <class name="CreditNext.customersListScreens.allCustomersListScreen" />
+            <class name="CreditNext.customersListScreens.customersWithOutStandingInvoices" />
+            <class name="CreditNext.customersListScreens.customersWithBalanceOverdue" />
+            <class name="CreditNext.customersListScreens.customersWithCreditLimitExceed" />
+        </classes>
+    </test>
+
+    <test name="CreditNext- Invoices List Screen UI test">
+        <classes>
+            <class name="CreditNext.InvoicesListScreens.allInvoicesListScreen" />
+            <class name="CreditNext.InvoicesListScreens.paidInvoices" />
+            <class name="CreditNext.InvoicesListScreens.outstandingInvoices" />
+            <class name="CreditNext.InvoicesListScreens.overdueInvoices" />
+        </classes>
+    </test> 
+
+    <test name="CreditNext- Actions List Screen UI test">
+        <classes>
+            <class name="CreditNext.actionsListScreens.AllActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.LetterActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.TelephoneActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.ReminderActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.CollectionAgencyActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.EmailActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.QueryOverdueActionsListScreen" />
+            <class name="CreditNext.actionsListScreens.CommittedPaymentActionsListScreen" />  
+        </classes>
+    </test>
+
+    <test name="CreditNext- Disputes List Screen UI test">
+        <classes>
+            <class name="CreditNext.disputesListScreens.AllDisputesListScreen" />
+            <class name="CreditNext.disputesListScreens.DisputeManagerDisputesListScreen" />
+            <class name="CreditNext.disputesListScreens.OutstandingQueriesListScreen" />
+            <class name="CreditNext.disputesListScreens.DisputesOverdueListScreen" />
+            <class name="CreditNext.disputesListScreens.ClosedDisputesListScreen" />
+            <class name="CreditNext.disputesListScreens.DisputesOnPaidInvoicesListScreen" />
+        </classes>
+    </test>
+
+    <test name="CreditNext- Requests List Screen UI test">
+        <classes>
+            <class name="CreditNext.requestsListScreens.AllRequestsListScreen" />
+            <class name="CreditNext.requestsListScreens.PendingRequestsListScreen" />
+            <class name="CreditNext.requestsListScreens.ReceivedRequestsListScreen" />
+            <class name="CreditNext.requestsListScreens.SentRequestsListScreen" />
+            <class name="CreditNext.requestsListScreens.ReceivedResponsesListScreen" />
+        </classes>
+    </test>
+
+    <test name="CreditNext Logout and close browser Functionality">
+        <classes>
+            <class name="CreditNext.CN_Login_Functionality.Logout" />
+        </classes>
+    </test>
+
+</suite>
