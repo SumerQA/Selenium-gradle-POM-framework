@@ -500,7 +500,7 @@ public class Profiles {
 	  WebDriverManager.waitForElement("p_action");
 	  c_page.Update_actionto_generate();
 	  Thread.sleep(1000);
-	  c_page.Request_Action("p_action","47","p_a_Pre_onguard_req", arr.get(28));
+	  c_page.Request_Action("p_action","47","p_a_Pre_Test_req", arr.get(28));
 	  type = eve.GetText_By_Attribute("p_action", "47");
 	  c_page.From_Days("p_from_days", arr.get(10));
 	  c_page.Comments("p_cmt",arr.get(12));
@@ -750,7 +750,7 @@ public class Profiles {
 	  WebDriverManager.waitForElement("p_action");
 	  c_page.Update_actionto_generate();
 	  Thread.sleep(1000);
-	  c_page.Request_Action("p_action","47","p_a_Pre_onguard_req", arr.get(28));
+	  c_page.Request_Action("p_action","47","p_a_Pre_Test_req", arr.get(28));
 	  Thread.sleep(1000);
 	  c_page.Save_Generated_Action();
 	  Thread.sleep(1000);
@@ -1000,7 +1000,7 @@ public class Profiles {
 	  WebDriverManager.waitForElement("p_action");
 	  c_page.Update_actionto_generate();
 	  Thread.sleep(1000);
-	  c_page.Request_Action("p_action","47","p_a_Pre_onguard_req", arr.get(28));
+	  c_page.Request_Action("p_action","47","p_a_Pre_Test_req", arr.get(28));
 	  c_page.Comments("p_cmt",arr.get(12));
 	  c_page.Recurs(arr.get(13));
 	  Thread.sleep(1000);

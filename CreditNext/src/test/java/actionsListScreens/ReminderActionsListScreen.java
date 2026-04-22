@@ -58,8 +58,8 @@ public class ReminderActionsListScreen extends TestListenerAdapter {
 	@Test(priority = 7, description ="Open Help Page in 'Reminder Actions' list screen without debtor selection") 
 	public void Open_HelpPage_In_Reminder_actions_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  }
 	
 	@Test(priority = 8, description = "Open Export to Excel in 'Reminder Actions' list screen with debtor selection")

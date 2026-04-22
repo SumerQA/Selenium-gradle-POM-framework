@@ -66,8 +66,8 @@ public class DisputesOverdueListScreen extends TestListenerAdapter {
 	@Test(priority = 9, description ="Open Help Page in 'Disputes overdue' list screen without debtor selection") 
 	public void Open_HelpPage_In_DisputeOverdue_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  }
 	@Test(priority = 10, description = "Open Dispute Report in 'Disputes overdue' list screen with debtor selection")
 	public void Open_Report_In_DisputeOverdue_DebtorSelection() {

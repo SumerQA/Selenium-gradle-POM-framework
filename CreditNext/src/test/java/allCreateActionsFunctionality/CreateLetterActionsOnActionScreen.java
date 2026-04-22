@@ -44,7 +44,7 @@ public class CreateLetterActionsOnActionScreen extends TestListenerAdapter {
 		CG_Actions.closePerviewInvoice();
 		CG_Actions.SaveDocumentLetter();
 		//String expectedTitle = CG_Actions.getWindowPopupTitle(); 
-		//CG_Actions.validationOnAction(expectedTitle, "Onguard");
+		//CG_Actions.validationOnAction(expectedTitle, "Test");
 		String ExpectedSuccessMsg = CG_Actions.getsuccessMessageONLetterComplete();
 		CG_Actions.validationOnAction(ExpectedSuccessMsg, "Letter Sent");
 		CG_Actions.closeDataModelDialog();

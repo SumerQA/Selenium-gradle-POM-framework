@@ -1,4 +1,4 @@
-package Onguard.General_Profile;
+package Test.General_Profile;
 
 import java.io.File;
 import java.io.IOException;
@@ -45,23 +45,23 @@ public class general_Profile {
 	  eve.handle_browser_tab("help_and_documentation","tripane");
   }
   @Test(priority=2)
-  public void Onguard_Customer_portal() throws IOException, InterruptedException {
+  public void Test_Customer_portal() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  General_Profile_Page gp_page = new General_Profile_Page(driver);
 	  events eve= new events(driver);
 	  gp_page.Goto_General_profile_DDlist();
 	  Thread.sleep(1500);
-	  eve.handle_browser_tab("onguard_customer_portal","user_email");
+	  eve.handle_browser_tab("Test_customer_portal","user_email");
   }
   @Test(priority=3)
-  public void Onguard_Service_Centre_Cancel_Functionality() throws IOException, InterruptedException {
+  public void Test_Service_Centre_Cancel_Functionality() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  General_Profile_Page gp_page = new General_Profile_Page(driver);
 	  Reporter.log("<<======================{General Profile Section}=======================>> ");
 	  Reporter.log("Verify cancel button Functionality----------->");
 	  gp_page.Goto_General_profile_DDlist();
 	  Thread.sleep(500);
-	  gp_page.General_profile_items("onguard_Service_centre");
+	  gp_page.General_profile_items("Test_Service_centre");
 	  Thread.sleep(500);
 	  gp_page.to(arr.get(0));
 	  gp_page.CC(arr.get(1));
@@ -76,13 +76,13 @@ public class general_Profile {
 	  Thread.sleep(500);
   }
   @Test(priority=4)
-  public void Onguard_Service_Centre_Send_Functionality_with_Invalid_Configration() throws IOException, InterruptedException {
+  public void Test_Service_Centre_Send_Functionality_with_Invalid_Configration() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  General_Profile_Page gp_page = new General_Profile_Page(driver);
 	  Reporter.log("Verify Send button Functionality with Invalid Configration----------->");
 	  gp_page.Goto_General_profile_DDlist();
 	  Thread.sleep(800);
-	  gp_page.General_profile_items("onguard_Service_centre");
+	  gp_page.General_profile_items("Test_Service_centre");
 	  Thread.sleep(500);
 	  gp_page.to(arr.get(0));
 	  gp_page.CC(arr.get(1));
@@ -99,14 +99,14 @@ public class general_Profile {
 	  Thread.sleep(500);
   }
   @Test(priority=5)
-  public void Onguard_Service_Centre_Send_Functionality_with_Valid_Configration() throws IOException, InterruptedException {
+  public void Test_Service_Centre_Send_Functionality_with_Valid_Configration() throws IOException, InterruptedException {
 	 WebDriver driver=WebDriverManager.getDriverInstance();
 	 General_Profile_Page gp_page = new General_Profile_Page(driver);
 	 Reporter.log("Verify Send button Functionality with Valid Configration----------->");
 	 Configure_Valid_user_settings_for_Email();
 	 gp_page.Goto_General_profile_DDlist();
 	 Thread.sleep(800);
-	 gp_page.General_profile_items("onguard_Service_centre");
+	 gp_page.General_profile_items("Test_Service_centre");
 	 Thread.sleep(500);
 	 gp_page.to(arr.get(0));
 	 gp_page.CC(arr.get(1));
@@ -130,7 +130,7 @@ public class general_Profile {
 	  Reporter.log("Verify Show Error Log Functionality----------->");
 	  gp_page.Goto_General_profile_DDlist();
 	  Thread.sleep(500);
-	  gp_page.General_profile_items("onguard_Show_Error_log");
+	  gp_page.General_profile_items("Test_Show_Error_log");
 	  Thread.sleep(500);
 	  gp_page.Read_Error_Log();
 	  Thread.sleep(500);

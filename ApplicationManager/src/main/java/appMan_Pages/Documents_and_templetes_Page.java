@@ -164,7 +164,7 @@ public class Documents_and_templetes_Page {
 			eve.Click_event("Com_Delete_temp_ICON");
 			
 		    }
-	 public void OnGuard_templete_Manager_icon(String path) throws IOException, InterruptedException {
+	 public void Test_templete_Manager_icon(String path) throws IOException, InterruptedException {
 			 events eve = new events(driver);
 			 eve.Click_event(path);
 		    }

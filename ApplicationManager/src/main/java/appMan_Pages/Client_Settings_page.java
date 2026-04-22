@@ -77,7 +77,7 @@ public class Client_Settings_page {
 
 	public void Default_Usergroup() throws IOException {
 		events eve = new events(driver);
-		eve.DropDown_list_event("CS_Default_UGroup", "OnGuard");
+		eve.DropDown_list_event("CS_Default_UGroup", "Test");
 		System.out.println("Item Selected from DDlist");
 	}
 

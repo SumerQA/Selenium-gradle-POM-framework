@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class ListScreenLocators {
 	//********************************************CUSTOMERS LIST SCREEN******************************//
 	//MenuList HomePage
-	 public static By OnguardMenuItem = By.xpath("//div[@id='side-navigation']//div/ul/li[1]/a[1]");
+	 public static By TestMenuItem = By.xpath("//div[@id='side-navigation']//div/ul/li[1]/a[1]");
 	 public static By CustomerGroupsMenuItem = By.xpath("//div[@id='side-navigation']//div/ul/li[2]/a[1]");
 	 public static By CustomersMenuItem = By.xpath("//div[@id='side-navigation']//div/ul/li[3]/a[1]");
      public static By InvoicesMenuItems = By.xpath("//div[@id='side-navigation']//div/ul/li[4]/a[1]");
@@ -90,7 +90,7 @@ public class ListScreenLocators {
      public static By invDetailsIcon = By.xpath("//img[@title='Invoice details']");  
      public static By invUDFFieldsIcon = By.xpath("//img[@title='Invoice user fields']"); 
      public static By assignInvoicePropertiesIcon = By.xpath("//img[@title='Assign invoice properties']");
-     public static By changeOGdateandCAStatus = By.xpath("//img[@title='Change Onguard days and collection agency status']");
+     public static By changeOGdateandCAStatus = By.xpath("//img[@title='Change Test days and collection agency status']");
      public static By showPartialPayment = By.xpath("//img[@title='Show partial payments']");
      public static By invTotal = By.xpath("//img[@title='Invoice totals']");
      

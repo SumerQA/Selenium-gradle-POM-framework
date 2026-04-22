@@ -416,9 +416,9 @@ public class Terminology {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Terminology_Page tp_page = new Terminology_Page(driver);
 	  tp_page.Terminology_list("7", "t_terminology_list_table");
-	  boolean list= tp_page.Terminology_Value("Onguard", "t_terminology_value_table");
+	  boolean list= tp_page.Terminology_Value("Test", "t_terminology_value_table");
 	  if(list){
-		  String value ="Onguard";
+		  String value ="Test";
 		  tp_page.Change_icon();
 		  Thread.sleep(1500);
 		  tp_page.English_En(value);
@@ -754,9 +754,9 @@ public class Terminology {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Terminology_Page tp_page = new Terminology_Page(driver);
 	  tp_page.Terminology_list("8", "t_terminology_list_table");
-	  boolean list= tp_page.Terminology_Value("Onguard", "t_terminology_value_table");
+	  boolean list= tp_page.Terminology_Value("Test", "t_terminology_value_table");
 	  if(list){
-		  String value ="Onguard";
+		  String value ="Test";
 		  tp_page.Change_icon();
 		  Thread.sleep(1500);
 		  tp_page.English_En(value);

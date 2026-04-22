@@ -68,8 +68,8 @@ public class AllDisputesListScreen extends TestListenerAdapter {
 	@Test(priority = 9, description ="Open Help Page in 'All Disputes' list screen without debtor selection") 
 	public void Open_HelpPage_In_All_disputes_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  }
 	@Test(priority = 10, description = "Open Dispute Report in 'All Disputes' list screen with debtor selection")
 	public void Open_Report_In_All_Disputes_DebtorSelection() {

@@ -91,7 +91,7 @@ public class CN_Login_Page extends events {
 			ChooseLanguage("English"); // English ChooseLanguage("Engels");
 			ChooseCurrency("USD");   // USD ChooseCurrency("EUR");
 			ClickonNextButton();
-			SelectUserGroup("Onguard"); // Onguard SelectUserGroup("Tester");
+			SelectUserGroup("Test"); // Test SelectUserGroup("Tester");
 			SelectAdmin("U.S.G. People Belgium");   //SelectAdmin("U.S.G. People Belgium")    //SelectAdmin("SDNA");
 			ClickonNextBurron_LoginPage2();
 			VerifyHomePage();

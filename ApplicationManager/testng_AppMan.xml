@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > 
-<suite name="Onguard Application Manager" verbose="1" parallel="false" thread-count="1" preserve-order="true"> 
+<suite name="Application Manager" verbose="1" parallel="false" thread-count="1" preserve-order="true"> 
 
     <!-- Parameters -->
     <parameter name="Browser" value="CH" /> 
@@ -17,7 +17,7 @@
 
     <!-- Packages -->
     <packages> 
-        <package name="ApplicationManager.Onguard_Login_Functionality"/> 
+        <package name="ApplicationManager.Login_Functionality"/> 
         <package name="ApplicationManager.User_Manager.UsersTab_Functionality"/> 
         <package name="ApplicationManager.Import_Manager.Import_sources_Tab_Functionality"/> 
         <package name="ApplicationManager.Functional_Configration.Administrations_tab_Functionality"/> 
@@ -50,9 +50,9 @@
     </listeners>
 
     <!-- Test Definitions -->
-    <test name="Onguard login with Parameterization Functionality"> 
+    <test name="login with Parameterization Functionality"> 
         <classes> 
-            <class name="Onguard_Login_Functionality.User_Login"/> 
+            <class name="Login_Functionality.User_Login"/> 
         </classes> 
     </test>
 
@@ -182,7 +182,7 @@
             <class name="Technical_Configration.Client_settings"/> 
             <class name="Technical_Configration.Email_servers"/> 
             <class name="Technical_Configration.Request_server_settings"/> 
-            <class name="Technical_Configration.EmailtoOnguard_settings"/> 
+            <class name="Technical_Configration.EmailtoTest_settings"/> 
             <class name="Technical_Configration.Report_servers"/> 
             <class name="Technical_Configration.Printers"/> 
             <class name="Technical_Configration.API_Inbound_settings"/> 
@@ -191,11 +191,11 @@
         </classes> 
     </test>
 
-    <test name="Onguard General Profile Section Functionality"> 
+    <test name=" General Profile Section Functionality"> 
         <classes> 
-            <class name="Onguard.General_Profile.general_Profile"/> 
-            <class name="Onguard.General_Profile.Signout"/> 
-            <class name="Onguard.General_Profile.Close_browser"/> 
+            <class name="General_Profile.general_Profile"/> 
+            <class name="General_Profile.Signout"/> 
+            <class name="General_Profile.Close_browser"/> 
         </classes> 
     </test>
 
@@ -217,10 +217,10 @@
         </classes> 
     </test>
 
-    <test name="Onguard Logout from Batch and Close Browser Functionality"> 
+    <test name=" Logout from Batch and Close Browser Functionality"> 
         <classes> 
-            <class name="Onguard.General_Profile.Signout"/> 
-            <class name="Onguard.General_Profile.Close_browser"/> 
+            <class name="General_Profile.Signout"/> 
+            <class name="General_Profile.Close_browser"/> 
         </classes> 
     </test> 
 

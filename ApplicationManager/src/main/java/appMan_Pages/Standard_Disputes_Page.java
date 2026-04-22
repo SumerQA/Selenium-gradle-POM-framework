@@ -126,9 +126,9 @@ public class Standard_Disputes_Page {
 		 events ev = new events(driver);
 		 ev.Check_box_JS("IsManagerEditable", text);
 		    }
-	 public void Change_OnGuard_days(String text) throws IOException {
+	 public void Change_Test_days(String text) throws IOException {
 		 events eve = new events(driver);
-		 eve.Check_box_JS("AutomaticOnGuardDays", text);
+		 eve.Check_box_JS("AutomaticTestDays", text);
 		    }
 	 public void Refresh() throws IOException , InterruptedException{
 			events eve = new events(driver);

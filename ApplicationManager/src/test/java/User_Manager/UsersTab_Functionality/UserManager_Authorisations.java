@@ -58,66 +58,66 @@ public class UserManager_Authorisations {
 		  Reporter.log("----------------------------------------");
 		  }
   @Test(priority = 2,description="Create New Role")//tab_overview
-  public void Check_Default_Role_for_Newly_Created_User_Under_Onguard_CreditNext_Viewer_Role() throws IOException, InterruptedException {
+  public void Check_Default_Role_for_Newly_Created_User_Under_Test_CreditNext_Viewer_Role() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
 	  Reporter.log("Verify Default role for Newly Created User");	 
 	  auth_obj.Users_Table(arr.get(0),"R_user_table","Users_Table_Common_id");
-	  auth_obj.Roles_Table("OnGuard CreditNext Viewer", "R_roles_table");
+	  auth_obj.Roles_Table("Test CreditNext Viewer", "R_roles_table");
 	  auth_obj.Users_Linked_to_Role_Table(arr.get(0), "R_roleslinked_Table","R_roleslinked_Table_id");
 	  Reporter.log("********Verify Default role for Newly Created User********");
 	  Reporter.log("----------------------------------------");
 	  }
  
 @Test(priority = 3)
-  public void Create_New_ChieldRole_for_Onguard_CreditNext_Account_Manager() throws IOException, InterruptedException {
+  public void Create_New_ChieldRole_for_Test_CreditNext_Account_Manager() throws IOException, InterruptedException {
 	 WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Create New Role for OnGuard CreditNext Account Manager");
+	  Reporter.log("Create New Role for Test CreditNext Account Manager");
 	  auth_obj.Create_New_AuthRole_panal();
 	  Thread.sleep(1500);
 	  auth_obj.Role_Name("R_name", arr.get(1));
 	  auth_obj.Description("R_desc", "Created for Account manager");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Save_and_Close_Icon();
 	  Thread.sleep(2000);
 	  auth_obj.Notification();
 	  Thread.sleep(2000);
-	  Reporter.log("********New Role Created for OnGuard CreditNext Account Manager ********");
+	  Reporter.log("********New Role Created for Test CreditNext Account Manager ********");
 	  Reporter.log("----------------------------------------");
 	  }
  
   @Test(priority = 4)
-  public void Create_New_ChieldRole_for_Onguard_CreditNext_Credit_manager() throws IOException, InterruptedException {
+  public void Create_New_ChieldRole_for_Test_CreditNext_Credit_manager() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Create New Role for OnGuard CreditNext Credit Manager");
+	  Reporter.log("Create New Role for Test CreditNext Credit Manager");
 	  auth_obj.Create_New_AuthRole_panal();
 	  Thread.sleep(1000);
 	  auth_obj.Role_Name("R_name", arr.get(2));
 	  auth_obj.Description("R_desc", "Created for Credit Manager");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Credit Manager");
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Credit Manager");
 	  auth_obj.Role_Save_and_Close_Icon();
 	  Thread.sleep(3000);
 	  auth_obj.Notification();
 	  
-	  Reporter.log("********New Role Created for OnGuard Credit manager ********");
+	  Reporter.log("********New Role Created for Test Credit manager ********");
 	  Reporter.log("----------------------------------------");
   }
   @Test(priority = 5)
-  public void Link_New_User_to_Onguard_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
+  public void Link_New_User_to_Test_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Link New User to OnGuard CreditNext Account Manager Role");
+	  Reporter.log("Link New User to Test CreditNext Account Manager Role");
 	  auth_obj.Open_Authorisations_Tab();
 	  auth_obj.Users_Table(arr.get(0),"R_user_table","Users_Table_Common_id");
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
 	  Thread.sleep(1000);
 	  auth_obj.Link_button();
 	  auth_obj.Notification();
 	  auth_obj.Save_After_linking_Icon();
 	  auth_obj.Notification();
-	  auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Account Manager", "R_roles_table");
+	  auth_obj.Expand_and_Collepse_Table("Test CreditNext Account Manager", "R_roles_table");
 	  Thread.sleep(2000);
 	  }
   @Test(priority = 6)
@@ -126,7 +126,7 @@ public class UserManager_Authorisations {
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
 	  Reporter.log("Verify Default role after assigning another role");	 
 	 // auth_obj.Users_Table(arr.get(0),"R_user_table");
-	  auth_obj.Roles_Table("OnGuard CreditNext Viewer", "R_roles_table");
+	  auth_obj.Roles_Table("Test CreditNext Viewer", "R_roles_table");
 	  auth_obj.Users_Linked_to_Role_Table(arr.get(0), "R_roleslinked_Table","R_roleslinked_Table_id");
 	  Thread.sleep(2000);
 	  Reporter.log("********Default role verified after assigning another role********");
@@ -134,93 +134,93 @@ public class UserManager_Authorisations {
 	 
 	  } 
   @Test(priority = 7)
-  public void Check_New_User_is_Linked_to_Onguard_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
+  public void Check_New_User_is_Linked_to_Test_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Verify that New User is linked to OnGuard CreditNext Account Manager Role");	  
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1),"Yes");
+	  Reporter.log("Verify that New User is linked to Test CreditNext Account Manager Role");	  
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1),"Yes");
 	  Thread.sleep(1000);
 	  } 
   @Test(priority = 8)
   public void Delete_ChieldRole_with_Linked_User() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Delete Child role created for OnGuard CreditNext Account Manager Role");	 
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
+	  Reporter.log("Delete Child role created for Test CreditNext Account Manager Role");	 
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
 	  auth_obj.Delete_New_AuthRol_button();
 	  auth_obj.Notification();
 	  Thread.sleep(1000);
 	  auth_obj.Notification();
 	  Thread.sleep(500);
-	  auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Account Manager", "R_roles_table");
+	  auth_obj.Expand_and_Collepse_Table("Test CreditNext Account Manager", "R_roles_table");
 	  
 	  }
   @Test(priority = 9)
-  public void Unlink_New_User_from_Onguard_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
+  public void Unlink_New_User_from_Test_CreditNext_Account_Manager_ChieldRole() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Unlink New User to OnGuard CreditNext Account Manager Role");
+	  Reporter.log("Unlink New User to Test CreditNext Account Manager Role");
 	 // auth_obj.Users_Table(arr.get(0),"R_user_table");
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
 	  auth_obj.Users_Linked_to_Role_Table(arr.get(0), "R_roleslinked_Table","R_roleslinked_Table_id");
 	  auth_obj.Unlink_button();
 	  auth_obj.Notification();
 	  auth_obj.Save_After_linking_Icon();
 	  auth_obj.Notification();
-	  auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Account Manager", "R_roles_table");
+	  auth_obj.Expand_and_Collepse_Table("Test CreditNext Account Manager", "R_roles_table");
 	  }
   @Test(priority = 10)
   public void Delete_ChieldRole_After_Unlinking_New_User() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Delete Child role after unlinking from OnGuard CreditNext Account Manager Role ");	 
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
+	  Reporter.log("Delete Child role after unlinking from Test CreditNext Account Manager Role ");	 
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1),"No");
 	  auth_obj.Delete_New_AuthRol_button();
 	  Thread.sleep(1000);
 	  auth_obj.Notification();
 	  auth_obj.Notification();
-	  //auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Application Manager", "R_roles_table");
+	  //auth_obj.Expand_and_Collepse_Table("Test CreditNext Application Manager", "R_roles_table");
 	  }
   
   @Test(priority = 11)
-  public void Link_User_to_Onguard_CreditNext_Credit_manager_Parent_Role() throws IOException, InterruptedException {
+  public void Link_User_to_Test_CreditNext_Credit_manager_Parent_Role() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  Reporter.log("Link New User to OnGuard CreditNext Credit Manager Role");
+	  Reporter.log("Link New User to Test CreditNext Credit Manager Role");
 	  Thread.sleep(10000);
 	  auth_obj.Users_Table(arr.get(0),"R_user_table","Users_Table_Common_id");
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Credit Manager", "R_roles_table",arr.get(2),"No");
+	  auth_obj.Chield_Role_Table("Test CreditNext Credit Manager", "R_roles_table",arr.get(2),"No");
 	  Thread.sleep(500);
 	  auth_obj.Link_button();
 	  auth_obj.Notification();
 	  auth_obj.Save_After_linking_Icon();
 	  Thread.sleep(1000);
 	  auth_obj.Notification();
-	  auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Credit Manager", "R_roles_table");
+	  auth_obj.Expand_and_Collepse_Table("Test CreditNext Credit Manager", "R_roles_table");
 	  }
   @Test(priority = 12)
-  public void Update_Onguard_CreditNext_Credit_manager_Chield_Role() throws IOException, InterruptedException {
+  public void Update_Test_CreditNext_Credit_manager_Chield_Role() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Credit Manager", "R_roles_table",arr.get(2),"No");
+	  auth_obj.Chield_Role_Table("Test CreditNext Credit Manager", "R_roles_table",arr.get(2),"No");
 	  auth_obj.Update_New_AuthRol_button();
 	  auth_obj.Role_Name("R_name", arr.get(2)+" update");
 	  auth_obj.Role_Save_and_Close_Icon();
 	  Thread.sleep(1000);
 	  auth_obj.Notification();
-	  auth_obj.Expand_and_Collepse_Table("OnGuard CreditNext Credit Manager", "R_roles_table");
+	  auth_obj.Expand_and_Collepse_Table("Test CreditNext Credit Manager", "R_roles_table");
 	  }
   @Test(priority = 13)
-  public void Verify_Updated_Onguard_CreditNext_Credit_manager_Chield_Role() throws IOException, InterruptedException {
+  public void Verify_Updated_Test_CreditNext_Credit_manager_Chield_Role() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Credit Manager", "R_roles_table",arr.get(2)+" update","Yes");
+	  auth_obj.Chield_Role_Table("Test CreditNext Credit Manager", "R_roles_table",arr.get(2)+" update","Yes");
 	  }
   @Test(priority = 14)
   public void Verify_deletion_of_parent_Role() throws IOException, InterruptedException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
-	  auth_obj.Roles_Table("OnGuard CreditNext Viewer", "R_roles_table");
+	  auth_obj.Roles_Table("Test CreditNext Viewer", "R_roles_table");
 	  auth_obj.Delete_New_AuthRol_button();
 	  auth_obj.Notification();
 	  auth_obj.Notification();
@@ -234,7 +234,7 @@ public class UserManager_Authorisations {
 	  Thread.sleep(1000);
 	  auth_obj.Role_Name("R_name", "");
 	  auth_obj.Description("R_desc", "checking mandatory fields");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Save_and_Close_Icon();
 	  auth_obj.Notification();
 	  auth_obj.Notification();
@@ -252,7 +252,7 @@ public class UserManager_Authorisations {
 	  Thread.sleep(1000);
 	  auth_obj.Role_Name("R_name", arr.get(1)+" Save");
 	  auth_obj.Description("R_desc", "checking mandatory fields");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Save_Icon();
 	  auth_obj.Notification();
 	  auth_obj.Notification();	 
@@ -267,7 +267,7 @@ public class UserManager_Authorisations {
 	  Reporter.log("Verify Save button Functionality in Create Role panal");	 
 	  auth_obj.Role_Name("R_name", arr.get(1)+" Reload");
 	  auth_obj.Description("R_desc", "checking mandatory fields");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Reload_Icon();
 	  auth_obj.Notification();
 	  auth_obj.Notification();
@@ -282,7 +282,7 @@ public class UserManager_Authorisations {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
 	  Reporter.log("Verify Saved Chield role under parent Role");	 
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1)+" Save","Yes");	
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1)+" Save","Yes");	
 	  Reporter.log("----------------------------------------");
 	  Reporter.log("********Chield Role verified under Parent role using SAVE icon********");
 	  Reporter.log("----------------------------------------");
@@ -296,7 +296,7 @@ public class UserManager_Authorisations {
 	  auth_obj.Create_New_AuthRole_panal();
 	  auth_obj.Role_Name("R_name", arr.get(1)+" SAN");
 	  auth_obj.Description("R_desc", "checking Save as New icon");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Save_AS_New_Icon();
 	  auth_obj.Notification();
 	  auth_obj.Notification();	
@@ -321,7 +321,7 @@ public class UserManager_Authorisations {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Authorisations_Page auth_obj= PageFactory.initElements(driver, Authorisations_Page.class);
 	  Reporter.log("Verify Saved Chield role under parent Role");	 
-	  auth_obj.Chield_Role_Table("OnGuard CreditNext Account Manager", "R_roles_table",arr.get(1)+" SAN","No");	
+	  auth_obj.Chield_Role_Table("Test CreditNext Account Manager", "R_roles_table",arr.get(1)+" SAN","No");	
 	  Reporter.log("----------------------------------------");
 	  Reporter.log("********Chield Role verified under Parent role using SAVE icon********");
 	  Reporter.log("----------------------------------------");
@@ -334,7 +334,7 @@ public class UserManager_Authorisations {
 	  auth_obj.Create_New_AuthRole_panal();
 	  auth_obj.Role_Name("R_name", arr.get(1)+" SAN");
 	  auth_obj.Description("R_desc", "checking redundancy");
-	  auth_obj.Copy_Of("R_copy_of", "OnGuard CreditNext Account Manager");	 	
+	  auth_obj.Copy_Of("R_copy_of", "Test CreditNext Account Manager");	 	
 	  auth_obj.Role_Save_and_Close_Icon();
 	  auth_obj.Notification();
 	  auth_obj.Notification();

@@ -66,8 +66,8 @@ public class DisputesOnPaidInvoicesListScreen extends TestListenerAdapter {
 	@Test(priority = 9, description ="Open Help Page in 'Disputes on paid invoices' list screen without debtor selection") 
 	public void Open_HelpPage_In_DisputesOnPaidInvoices_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext");
-       //CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext");
+       //CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  }
 	@Test(priority = 10, description = "Open Dispute Report in 'Disputes on paid invoices' list screen with debtor selection", enabled = false)
 	public void Open_Report_In_DisputesOnPaidInvoices_DebtorSelection() {

@@ -117,8 +117,8 @@ public class overdueInvoices extends TestListenerAdapter {
 	  CG_screen.ValidateOpenedListScreen(ExpectedResult, noRowsSelected);
 	}
 
-	@Test(priority = 17, description ="Open Onguard date and CA Status in 'Overdue Invoices' list screen without invoice selection")
-	public void Open_ChangeOnguardDateandCAStatusHistory_In_Overdue_Invoices_List_screen() {
+	@Test(priority = 17, description ="Open Test date and CA Status in 'Overdue Invoices' list screen without invoice selection")
+	public void Open_ChangeTestDateandCAStatusHistory_In_Overdue_Invoices_List_screen() {
 		String ExpectedResult =CG_screen.OpentoolBarIconInCustonerGroupsListScreen(ListScreenLocators.changeOGdateandCAStatus,ListScreenLocators.noRowsSelected);
 		CG_screen.ValidateOpenedListScreen(ExpectedResult, noRowsSelected);
 	  }
@@ -135,8 +135,8 @@ public class overdueInvoices extends TestListenerAdapter {
 	@Test(priority = 20, description ="Open Help Page in 'Overdue Invoices' list screen without invoice selection") 
 	public void Open_HelpPage_In_Overdue_Invoices_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext"); 
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext"); 
 	  } 
 	@Test(priority = 21, description = "Open Invoice Report in 'Overdue Invoices' list screen with invoice selection")
 	public void Open_InvoiceReport_c() {
@@ -260,11 +260,11 @@ public class overdueInvoices extends TestListenerAdapter {
 		 CG_screen.closeDataModelDialog();
 	  }
 
-	@Test(priority = 36, description ="Open Change Onguard date and CA Status in 'Overdue Invoices' list screen with invoice selection")
-	public void Open_ChangeOnguardDateandCAStatusHistory_with_OverdueInvoiceSelection() {
+	@Test(priority = 36, description ="Open Change Test date and CA Status in 'Overdue Invoices' list screen with invoice selection")
+	public void Open_ChangeTestDateandCAStatusHistory_with_OverdueInvoiceSelection() {
 		CG_screen.selectDebtorinListScreen(InvNum);
 		String ExpectedResult =CG_screen.OpentoolBarIconInCustonerGroupsListScreen(ListScreenLocators.changeOGdateandCAStatus,ListScreenLocators.invWindowTitleText);
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Change Onguard days and collection agency status");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Change Test days and collection agency status");
 		CG_screen.closeDataModelDialog();
 	  }
 	@Test(priority = 37, description ="Open Partial payments in 'Overdue Invoices' list screen with invoice selection")

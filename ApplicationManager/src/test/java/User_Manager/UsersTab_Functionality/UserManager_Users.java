@@ -151,7 +151,7 @@ public class UserManager_Users extends TestListenerAdapter {
 		OG_CU1.Enter_MobileNo2("6969696969");
 		OG_CU1.Enter_FaxNo("878787");
 		OG_CU1.Enter_URL("www.mytest.com");
-		OG_CU1.Select_manager("OnGuard O");
+		OG_CU1.Select_manager("Test O");
 		OG_CU1.Enter_Dept1("Account");
 		OG_CU1.Enter_Dept2("operation");
 		OG_CU1.Enter_Job_Desc("Tech manager");

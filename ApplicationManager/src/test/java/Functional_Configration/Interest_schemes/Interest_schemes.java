@@ -252,14 +252,14 @@ public class Interest_schemes {
 	  
   }
  @Test(priority=16)
- public void Verify_Calculate_From_Onguard_Date() throws IOException, InterruptedException {
+ public void Verify_Calculate_From_Test_Date() throws IOException, InterruptedException {
 	 WebDriver driver=WebDriverManager.getDriverInstance();
 	 Interest_Schemes_Page IS_page = new Interest_Schemes_Page(driver);
      IS_page.Creat_New_icon();
 	 Thread.sleep(1500);
-	 IS_page.Interest_scheme_Name("is_is_name_input_field",arr.get(0)+" OnGuard Date");
+	 IS_page.Interest_scheme_Name("is_is_name_input_field",arr.get(0)+" Test Date");
 	 IS_page.Description("is_Desc_Input_field", arr.get(1));
-	 IS_page.Calculate_From("is_Cal_from_Ddlist","is_Cal_from_input","2",arr.get(3));//2 is For Onguard date option DDlist value
+	 IS_page.Calculate_From("is_Cal_from_Ddlist","is_Cal_from_input","2",arr.get(3));//2 is For Test date option DDlist value
 	 IS_page.Currency("is_currency_ddlist",arr.get(4));
 	 IS_page.Threshold_value("is_ThresholdValue", arr.get(5));
 	 IS_page.Include_paid_invoice("is_include_paid_invoices",arr.get(6));

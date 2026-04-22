@@ -272,7 +272,7 @@ public class CreateLetterActionOnDebtorsScreen extends TestListenerAdapter {
 		CG_Actions.getSubjectofLetterAction();
 		System.out.println(CG_Actions.getSubjectofLetterAction());
 		//String expectedTitle = CG_Actions.getWindowPopupTitle(); 
-		//CG_Actions.validationOnAction(expectedTitle, "Onguard");
+		//CG_Actions.validationOnAction(expectedTitle, "Test");
 		String ExpectedSuccessMsg = CG_Actions.getsuccessMessageONLetterComplete();
 		CG_Actions.validationOnAction(ExpectedSuccessMsg, "Letter Sent");
 		CG_Actions.closeDataModelDialog();

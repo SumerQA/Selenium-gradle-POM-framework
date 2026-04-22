@@ -116,12 +116,12 @@ public class Standard_disputes {
 	  SD_page.Dispute_Manager_Editable(arr.get(11));
   }
   @Test(priority=11)
-  public void Check_change_OnguardDays() throws IOException {
+  public void Check_change_TestDays() throws IOException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  Standard_Disputes_Page SD_page = new Standard_Disputes_Page(driver);
-	  Reporter.log("Verify Change OnGuard days Checkbox. ---------->>");
-	  SD_page.Change_OnGuard_days(arr.get(12));
-	  System.out.println("Change OnGuard days checkbox is Checked");
+	  Reporter.log("Verify Change Test days Checkbox. ---------->>");
+	  SD_page.Change_Test_days(arr.get(12));
+	  System.out.println("Change Test days checkbox is Checked");
   }
   @Test(priority=12)
   public void Save_and_Close() throws IOException, InterruptedException {

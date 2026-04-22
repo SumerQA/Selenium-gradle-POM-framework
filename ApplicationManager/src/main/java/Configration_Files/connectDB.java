@@ -14,7 +14,7 @@ public class connectDB {
 	 try {
 		 	Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");
 
-		    Connection m_Connection = DriverManager.getConnection("jdbc:microsoft:sqlserver://"+DataSource+";databaseName="+DatabaseName+"", "onguard", "beschuit");
+		    Connection m_Connection = DriverManager.getConnection("jdbc:microsoft:sqlserver://"+DataSource+";databaseName="+DatabaseName+"", "testDB", "test");
 
 		    Statement m_Statement = m_Connection.createStatement();
 		    ResultSet m_ResultSet =m_Statement.executeQuery(query);

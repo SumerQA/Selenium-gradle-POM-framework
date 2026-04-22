@@ -152,7 +152,7 @@ public class Profiles_Old {
 		 p_page.Remove_User_Group_Action(path,Action,"p_a_remove_usergroup", arr.get(27));
 		break;
   	case "47":
-		 p_page.Request_Action(path,Action,"p_a_Pre_onguard_req", arr.get(28));
+		 p_page.Request_Action(path,Action,"p_a_Pre_Test_req", arr.get(28));
 		break;		
   	default:
   		 eve.DropDown_list_event(path, Action);	

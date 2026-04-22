@@ -58,8 +58,8 @@ public class LetterActionsListScreen extends TestListenerAdapter {
 	@Test(priority = 7, description ="Open Help Page in 'Letter Actions' list screen without debtor selection") 
 	public void Open_HelpPage_In_Letter_actions_List_screen() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  }
 	
 	@Test(priority = 8, description = "Open Export to Excel in 'Letter Actions' list screen with debtor selection")

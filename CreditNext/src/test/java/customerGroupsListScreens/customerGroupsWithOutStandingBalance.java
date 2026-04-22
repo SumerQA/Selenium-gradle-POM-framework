@@ -209,8 +209,8 @@ public class customerGroupsWithOutStandingBalance extends TestListenerAdapter {
 	@Test(priority = 28, description ="Open Help Page in 'Customer Groups with Outstanding Balance' list screen without debtor selection") 
 	public void Open_HelpPage() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext"); 
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext"); 
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext"); 
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext"); 
 	  }
 
 	@Test(priority = 29, description = "Open Customer Report in 'Customer Groups with Outstanding Balance' list screen with debtor selection")

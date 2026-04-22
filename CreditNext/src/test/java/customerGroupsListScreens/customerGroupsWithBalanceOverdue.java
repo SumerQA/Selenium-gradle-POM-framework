@@ -209,8 +209,8 @@ public class customerGroupsWithBalanceOverdue extends TestListenerAdapter {
 	@Test(priority = 28, description ="Open Help Page in 'Customer Groups with Balance Overdue' list screen without debtor selection") 
 	public void Open_HelpPage() { 
 		String ExpectedResult =CG_screen.OpenhelpPage();
-		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard CreditNext");
-		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Onguard Connext");
+		CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test CreditNext");
+		//CG_screen.ValidateOpenedListScreen(ExpectedResult, "Help file Test Connext");
 	  //CG_screen.CloseAllCustomerGroupListScreen(); 
 	  }
 

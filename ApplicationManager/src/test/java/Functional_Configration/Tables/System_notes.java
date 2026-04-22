@@ -173,18 +173,18 @@ public class System_notes {
 	  Reporter.log("----------------------------------------");
   }
   @Test(priority=19)
-  public void Onguard_monitoring_off_Checkbox () throws IOException {
+  public void Test_monitoring_off_Checkbox () throws IOException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  System_notes_Page sn_page = new System_notes_Page(driver);
-	  Reporter.log("********Verify 'OnGuard monitoring: off'  checkbox. ********");
+	  Reporter.log("********Verify 'Test monitoring: off'  checkbox. ********");
 	  sn_page.Checkbox("chk_notes406", arr.get(16));
 	  Reporter.log("----------------------------------------");
   }
   @Test(priority=20)
-  public void Onguard_monitoring_On_Checkbox () throws IOException {
+  public void Test_monitoring_On_Checkbox () throws IOException {
 	  WebDriver driver=WebDriverManager.getDriverInstance();
 	  System_notes_Page sn_page = new System_notes_Page(driver);
-	  Reporter.log("********Verify 'OnGuard monitoring: on'  checkbox. ********");
+	  Reporter.log("********Verify 'Test monitoring: on'  checkbox. ********");
 	  sn_page.Checkbox("chk_notes407", arr.get(17));
 	  Reporter.log("----------------------------------------");
   }
